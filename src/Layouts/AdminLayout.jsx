@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Button from "@/Components/Button";
+import { confirmLogout } from "@/Utils/Helper/SwalHelper";
 
 const toggleProfileMenu = () => {
   const menu = document.getElementById("profileMenu");
@@ -31,8 +32,12 @@ const AdminLayout = () => {
                 </a>
                 <button
                   onClick={() => {
-                    localStorage.removeItem("user");
-                    location.href = "/";
+                    confirmLogout().then((result) => {
+                      if (result.isConfirmed) {
+                        localStorage.removeItem("user");
+                        location.href = "/";
+                      }
+                    });
                   }}
                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >

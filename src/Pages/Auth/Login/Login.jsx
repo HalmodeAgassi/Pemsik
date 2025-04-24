@@ -4,6 +4,7 @@ import Form from "@/Components/Form";
 import Button from "@/Components/Button";
 import Card from "@/Components/Card";
 import Heading from "@/Components/Heading";
+import { showSuccessToast, showErrorToast } from "@/Utils/Helper/ToastHelper";
 
 import { DummyUser } from "@/Data/Dummy";
 
@@ -15,9 +16,13 @@ const Login = () => {
 
     if (email === DummyUser.email && password === DummyUser.password) {
       localStorage.setItem("user", JSON.stringify(DummyUser));
-      window.location.href = "/admin/dashboard";
+      showSuccessToast("Login Berhasil");
+
+      setTimeout(() => {
+        window.location.href = "/admin/dashboard";
+      }, 1000);
     } else {
-      alert("Email atau password salah!");
+      showErrorToast("Email atau password salah!");
     }
   };
   return (
