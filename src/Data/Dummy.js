@@ -1,30 +1,12 @@
 // Dummy user untuk login
 export const DummyUser = {
-  email: "admin@mail.com",
-  password: "123456",
-  name: "Admin",
+  email: "halmodea@mail.com",
+  password: "regx45",
+  name: "Halmode",
+  progress: 0,
 };
-
-// Dummy data mahasiswa
-export const MahasiswaList = [
-  {
-    nim: "A11.2022.14539",
-    nama: "Halmode Agassi",
-    progress: 50,
-  },
-  {
-    nim: "A12.2021.13456",
-    nama: "Arizal Irsyad",
-    progress: 75,
-  },
-  {
-    nim: "A22.2023.13452",
-    nama: "Ulyanida",
-    progress: 30,
-  },
-];
 // Dummy data Modul
-export const modulList = [
+export const ModulList = [
   {
     id: 1,
     judul: "Pengenalan React",

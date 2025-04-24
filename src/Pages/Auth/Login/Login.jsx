@@ -26,7 +26,7 @@ const Login = () => {
     }
   };
   return (
-    <Card>
+    <Card className="max-w-md">
       <Heading as="h2">Login</Heading>
       <Form onSubmit={handleSubmit}>
         <div>

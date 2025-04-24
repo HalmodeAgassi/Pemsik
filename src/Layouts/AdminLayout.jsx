@@ -14,7 +14,9 @@ const AdminLayout = () => {
       <div className="flex flex-col flex-1">
         <header className="bg-white shadow-md">
           <div className="flex justify-between items-center px-6 py-4">
-            <h1 className="text-2xl font-semibold text-gray-800">Mahasiswa</h1>
+            <h1 className="text-2xl font-semibold text-gray-800">
+              Belajar Pintar
+            </h1>
             <div className="relative">
               <Button
                 onClick={toggleProfileMenu}
