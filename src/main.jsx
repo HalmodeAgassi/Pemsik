@@ -16,6 +16,11 @@ import Login from "@/Pages/Auth/Login/Login";
 import Dashboard from "@/Pages/Admin/Dashboard/Dashboard";
 import Kelas from "@/Pages/Admin/Modul/Modul";
 
+import QuizPage from "@/Pages/Admin/Quiz/QuizPage";
+import ForumPage from "@/Pages/Admin/Forum/ForumPage";
+import AchievementPage from "@/Pages/Admin/Pencapaian/AchievementPage";
+import InstructorDashboard from "@/Pages/Admin/Instruktur/InstructorDashboard";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +51,22 @@ const router = createBrowserRouter([
       {
         path: "kelas",
         element: <Kelas />,
+      },
+      {
+        path: "quiz",
+        element: <QuizPage />,
+      },
+      {
+        path: "forum",
+        element: <ForumPage />,
+      },
+      {
+        path: "pencapaian",
+        element: <AchievementPage />,
+      },
+      {
+        path: "instruktur",
+        element: <InstructorDashboard />,
       },
     ],
   },

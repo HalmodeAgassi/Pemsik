@@ -51,4 +51,4 @@ const Kelas = () => {
   );
 };
 
-export default Kelas; // <-- ini wajib ada!
+export default Kelas;
